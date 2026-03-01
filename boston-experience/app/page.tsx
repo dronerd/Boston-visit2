@@ -4,6 +4,7 @@ import Day2 from './page2';
 import Day3 from './page3';
 import Day4 from './page4';
 import Day5 from './page5';
+import VideoHero from './VideoHero';
 
 export default function Home() {
   const schedule: DaySchedule[] = [
@@ -367,6 +368,9 @@ export default function Home() {
             </p>
           </section>
         </header>
+
+        {/* Hero video with overlay buttons */}
+        <VideoHero />
 
         {/* Daily Schedules (split into separate files per date) */}
         <div className="space-y-12">
