@@ -9,7 +9,7 @@ const defaultPositions: Pos[] = [
   { top: '18%', left: '8%' },
   { top: '22%', left: '35%' },
   { top: '48%', left: '15%' },
-  { top: '55%', left: '45%' },
+  { top: '55%', left: '30%' },
 ];
 
 export default function VideoHero({ positions = defaultPositions }: { positions?: Pos[] }) {
@@ -64,7 +64,7 @@ export default function VideoHero({ positions = defaultPositions }: { positions?
         <Link key={i} href={`/page${i + 1}`} className="absolute" style={{ top: p.top, left: p.left }}>
           <button
             aria-label={`Go to March ${i + 4}`}
-            className="h-10 w-10 rounded-full bg-white/80 text-black flex items-center justify-center shadow-md hover:scale-105 transition-transform"
+            className="h-8 w-8 md:h-10 md:w-10 rounded-full bg-white/80 text-black text-xs md:text-base flex items-center justify-center shadow-md hover:scale-105 transition-transform"
             onClick={() => { /* navigation handled by Link */ }}
           >
             3/{i + 4}
