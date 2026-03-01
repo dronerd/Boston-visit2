@@ -6,11 +6,10 @@ import Link from 'next/link';
 type Pos = { top: string; left: string };
 
 const defaultPositions: Pos[] = [
-  { top: '18%', left: '10%' },
+  { top: '18%', left: '8%' },
   { top: '22%', left: '35%' },
-  { top: '48%', left: '28%' },
-  { top: '55%', left: '58%' },
-  { top: '40%', left: '80%' },
+  { top: '48%', left: '15%' },
+  { top: '55%', left: '45%' },
 ];
 
 export default function VideoHero({ positions = defaultPositions }: { positions?: Pos[] }) {
