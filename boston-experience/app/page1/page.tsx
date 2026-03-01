@@ -120,11 +120,13 @@ const day: DaySchedule = {
 
 export default function Page1() {
   return (
-    <section className="rounded-2xl bg-white/4 ring-1 ring-white/8 overflow-hidden">
-      <div className="bg-gradient-to-r from-white/10 to-white/5 px-8 py-6 border-b border-white/6">
-        <h2 className="text-2xl font-semibold text-zinc-50">{day.date}</h2>
-        <p className="text-sm text-zinc-300 mt-1">{day.dayName} — {day.theme}</p>
-      </div>
+    <div className="min-h-screen bg-gradient-to-b from-[#071536] via-[#0b3b73] to-[#04162a] text-zinc-100">
+      <main className="mx-auto max-w-6xl px-6 py-16">
+        <section className="rounded-2xl bg-white/4 ring-1 ring-white/8 overflow-hidden">
+          <div className="bg-gradient-to-r from-white/10 to-white/5 px-8 py-6 border-b border-white/6">
+            <h2 className="text-2xl font-semibold text-zinc-50">{day.date}</h2>
+            <p className="text-sm text-zinc-300 mt-1">{day.dayName} — {day.theme}</p>
+          </div>
 
       <div className="divide-y divide-white/6">
         {day.sessions.map((session) => (
