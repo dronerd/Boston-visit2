@@ -1,7 +1,37 @@
 import React from 'react';
 import { DaySchedule } from './types';
 
-export default function Page4({ day }: { day: DaySchedule }) {
+const day: DaySchedule = {
+  date: "March 7",
+  dayName: "Saturday",
+  theme: "移動日",
+  sessions: [
+    {
+      id: 23,
+      time: "10:00〜",
+      title: "Optional Session",
+      description:
+        "Otomo HealthのTakanishiさんとのセッション（希望者向け）。ヘルスケア × スタートアップのリアルを聞く。",
+      guests: [
+        {
+          name: "Kiyo Takanishi",
+          title: "Co-Founder, Otomo Health",
+          bio: "三菱商事で投資・事業開発を経験後、2021年にcotoceller.com（日本最大の病院DXプラットフォーム、3,000病院以上が利用）を創業。2024年にMIT Sloan在学中にOtomo Healthを共同創業。",
+          linkedin: "https://www.linkedin.com/in/kiyofumi-takanishi/",
+        },
+      ],
+      references: [{ label: "Otomo Health", url: "https://www.otomohealth.com/about" }],
+    },
+    {
+      id: 24,
+      time: "15:00〜",
+      title: "Departure",
+      description: "ホテル → 空港移動。ボストン空港到着（ターミナルB）。19:31発 AA4503便（NY経由）に乗車。3/9 05:00に羽田空港到着。",
+    },
+  ],
+};
+
+export default function Page4() {
   return (
     <section className="rounded-2xl bg-white/4 ring-1 ring-white/8 overflow-hidden">
       <div className="bg-gradient-to-r from-white/10 to-white/5 px-8 py-6 border-b border-white/6">
