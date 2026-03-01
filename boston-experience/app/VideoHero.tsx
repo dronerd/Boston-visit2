@@ -56,7 +56,7 @@ export default function VideoHero({ positions = defaultPositions }: { positions?
         muted
         loop
         playsInline
-        className="w-full h-96 object-cover"
+        className="w-full h-auto object-contain"
         aria-hidden={false}
       />
 
