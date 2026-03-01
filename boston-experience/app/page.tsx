@@ -10,7 +10,7 @@ export default function Home() {
     date: "March 3",
     dayName: "Tuesday",
     theme: "移動日",
-    sessions: [
+    sessions: [ 
       {
         id: 1,
         time: "16:30",
@@ -72,12 +72,6 @@ export default function Home() {
               ))}
             </div>
           </section>
-
-          {/* External day components for March 4-7 */}
-          <Page1 />
-          <Page2 />
-          <Page3 />
-          <Page4 />
         </div>
 
         {/* Footer */}

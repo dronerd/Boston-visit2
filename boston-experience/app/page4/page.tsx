@@ -33,22 +33,24 @@ const day: DaySchedule = {
 
 export default function Page4() {
   return (
-    <section className="rounded-2xl bg-white/4 ring-1 ring-white/8 overflow-hidden">
-      <div className="bg-gradient-to-r from-white/10 to-white/5 px-8 py-6 border-b border-white/6">
-        <h2 className="text-2xl font-semibold text-zinc-50">{day.date}</h2>
-        <p className="text-sm text-zinc-300 mt-1">{day.dayName} — {day.theme}</p>
-      </div>
+    <div className="min-h-screen bg-gradient-to-b from-[#071536] via-[#0b3b73] to-[#04162a] text-zinc-100">
+      <main className="mx-auto max-w-6xl px-6 py-16">
+        <section className="rounded-2xl bg-white/4 ring-1 ring-white/8 overflow-hidden">
+          <div className="bg-gradient-to-r from-white/10 to-white/5 px-8 py-6 border-b border-white/6">
+            <h2 className="text-2xl font-semibold text-zinc-50">{day.date}</h2>
+            <p className="text-sm text-zinc-300 mt-1">{day.dayName} — {day.theme}</p>
+          </div>
 
-      <div className="divide-y divide-white/6">
-        {day.sessions.map((session) => (
-          <div key={session.id} className="px-8 py-6 hover:bg-white/3 transition-colors">
-            <div className="flex gap-6">
-              <div className="flex-shrink-0 w-24">
-                <time className="text-sm font-semibold text-blue-300">{session.time}</time>
-              </div>
-              <div className="flex-1">
-                <h3 className="text-lg font-semibold text-zinc-50">{session.title}</h3>
-                <p className="mt-2 text-zinc-200 text-sm leading-relaxed">{session.description}</p>
+          <div className="divide-y divide-white/6">
+            {day.sessions.map((session) => (
+              <div key={session.id} className="px-8 py-6 hover:bg-white/3 transition-colors">
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0 w-24">
+                    <time className="text-sm font-semibold text-blue-300">{session.time}</time>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold text-zinc-50">{session.title}</h3>
+                    <p className="mt-2 text-zinc-200 text-sm leading-relaxed">{session.description}</p>
 
                 {session.guests && session.guests.length > 0 && (
                   <div className="mt-4 space-y-3">
@@ -80,5 +82,7 @@ export default function Page4() {
         ))}
       </div>
     </section>
+      </main>
+    </div>
   );
 }
