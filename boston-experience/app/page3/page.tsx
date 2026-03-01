@@ -143,5 +143,9 @@ export default function Page3() {
         ))}
       </div>
     </section>
+      </main>
+    </div>
+  );
+}
   );
 }

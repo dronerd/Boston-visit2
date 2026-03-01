@@ -138,5 +138,7 @@ export default function Page2() {
         ))}
       </div>
     </section>
+      </main>
+    </div>
   );
 }
