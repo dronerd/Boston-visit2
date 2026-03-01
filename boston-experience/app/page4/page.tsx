@@ -1,5 +1,5 @@
 import React from 'react';
-import { DaySchedule } from './types';
+import { DaySchedule } from '../types';
 
 const day: DaySchedule = {
   date: "March 7",

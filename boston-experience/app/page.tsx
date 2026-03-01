@@ -1,8 +1,8 @@
 import { DaySchedule } from './types';
-import Day1 from './page1';
-import Day2 from './page2';
-import Day3 from './page3';
-import Day4 from './page4';
+import Page1 from './page1/page';
+import Page2 from './page2/page';
+import Page3 from './page3/page';
+import Page4 from './page4/page';
 import VideoHero from './VideoHero';
 
 export default function Home() {
@@ -74,10 +74,10 @@ export default function Home() {
           </section>
 
           {/* External day components for March 4-7 */}
-          <Day1 />
-          <Day2 />
-          <Day3 />
-          <Day4 />
+          <Page1 />
+          <Page2 />
+          <Page3 />
+          <Page4 />
         </div>
 
         {/* Footer */}
