@@ -10,8 +10,9 @@ const defaultPositions: Pos[] = [
   { top: '22%', left: '45%' },
   { top: '48%', left: '28%' },
   { top: '62%', left: '58%' },
-  { top: '40%', left: '80%' },
 ];
+
+const dateLabels = ['3/4', '3/5', '3/6', '3/7'];
 
 export default function VideoHero({ positions = defaultPositions }: { positions?: Pos[] }) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -61,14 +62,14 @@ export default function VideoHero({ positions = defaultPositions }: { positions?
       />
 
       {/* Overlay buttons */}
-      {positions.slice(0, 5).map((p, i) => (
+      {positions.map((p, i) => (
         <Link key={i} href={`/page${i + 1}`} className="absolute" style={{ top: p.top, left: p.left }}>
           <button
             aria-label={`Go to page ${i + 1}`}
-            className="h-10 w-10 rounded-full bg-white/80 text-black flex items-center justify-center shadow-md hover:scale-105 transition-transform"
+            className="h-10 w-10 rounded-full bg-white/80 text-black flex items-center justify-center shadow-md hover:scale-105 transition-transform text-xs font-semibold"
             onClick={() => { /* navigation handled by Link */ }}
           >
-            {i + 1}
+            {dateLabels[i]}
           </button>
         </Link>
       ))}

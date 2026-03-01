@@ -72,12 +72,6 @@ export default function Home() {
               ))}
             </div>
           </section>
-
-          {/* External day components for March 4-7 */}
-          <Page1 />
-          <Page2 />
-          <Page3 />
-          <Page4 />
         </div>
 
         {/* Footer */}
