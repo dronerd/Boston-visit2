@@ -7,9 +7,9 @@ type Pos = { top: string; left: string };
 
 const defaultPositions: Pos[] = [
   { top: '18%', left: '10%' },
-  { top: '22%', left: '45%' },
+  { top: '22%', left: '35%' },
   { top: '48%', left: '28%' },
-  { top: '62%', left: '58%' },
+  { top: '52%', left: '58%' },
   { top: '40%', left: '80%' },
 ];
 
