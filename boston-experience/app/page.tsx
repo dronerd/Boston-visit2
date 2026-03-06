@@ -20,9 +20,9 @@ export default function Home() {
           </div>
 
           <section className="w-full rounded-xl bg-white/6 p-8 shadow-lg ring-1 ring-white/6">
-            <h2 className="text-2xl font-semibold text-zinc-50">プログラム紹介</h2>
+            <h2 className="text-2xl font-semibold text-zinc-50">プログラム</h2>
             <p className="mt-3 text-base text-zinc-200 leading-relaxed">
-              このプログラムでは、ボストンのスタートアップエコシステムを知り尽くす様々なリーダーと出会い、世界で活躍する起業家・研究者・イノベーターから学びます。CIC（Cambridge Innovation Center）、MIT Sloan、ハーバード大学、Greentown Labs、Venture Café など、ボストンを代表する機関を訪問し、米国の起業文化と人材ネットワークを肌で感じることができます。
+              things i did and learned during my 5-day trip to boston. i arranged meetings with people in advance through linkedin, visited greentown labs, attended venture café, and had many conversations with people in the local community. each day was full of new experiences and insights that helped me learn more about myself and my future goals.
             </p>
           </section>
         </header>
@@ -30,11 +30,7 @@ export default function Home() {
         {/* Hero video with overlay buttons */}
         <VideoHero />
 
-        {/* Footer */}
-        <footer className="mt-16 text-center">
-          <p className="text-sm text-zinc-400">楽しいボストン体験になることを願っています！</p>
-          <p className="text-xs text-zinc-500 mt-2">Last Updated: March 1, 2026</p>
-        </footer>
+       
       </main>
     </div>
   );
